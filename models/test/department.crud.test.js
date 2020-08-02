@@ -4,10 +4,9 @@ const MongoMemoryServer = require('mongodb-memory-server').MongoMemoryServer;
 const mongoose = require('mongoose');
 
 
-describe('Department', () => {
+describe('Department CRUD', () => {
 
   before(async () => {
-
     try {
       const fakeDB = new MongoMemoryServer();
       const uri = await fakeDB.getConnectionString();
